@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es"> <!-- Cambiado a español -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StuDesingEx</title>
+    
+    <!-- Optimización de enlaces a fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Itim&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+          rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="estilo.css"> <!-- Ruta corregida -->
+</head>
+<body>
+    <main>
+        <header>
+            <!-- IDs únicos -->
+            <img src="imagenes/Icono.png" alt="Icono" id="icono-header" width="50">
+            <img src="imagenes/LOGO.png" alt="Logo" id="logo-header" width="200">
+        </header>
+
+        <nav class="topnav" id="mytopnav">
+            <a href="#" class="nav-icon"><img src="imagenes/Icono.png" alt="Icono" width="50"></a>
+            <a href="#c">StuDesingEx</a>
+            <a href="#j">Estudiantes</a>
+            <a href="#promo">Promocionate</a>
+            <a class="icon" onclick="funcionNavBar()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </nav>
+
+        <div id="prin">
+            <!-- Secciones optimizadas -->
+            <section class="super" id="c">
+                <h2>¿Quienes Somos?</h2>
+                <div class="texto">
+                    <p>StuDesignEx es un proyecto que busca conectar directamente...</p>
+                </div>
+            </section>
+
+            <!-- Secciones de estudiantes mejor estructuradas -->
+            <section class="super" id="j">
+                <h2>Andru Leal</h2>
+                <div class="perfil">
+                    <img src="imagenes/andu.png" alt="Andru Leal" width="200">
+                    <div class="info">
+                        <p>"¿Interesado en alguna animación?..."</p>
+                        <button class="boton-vermas" onclick="mostrarDocumento('DOCANDRU')">Ver más...</button>
+                    </div>
+                </div>
+                <img src="imagenes/DOCANDRU.png" alt="Documento Andru" id="DOCANDRU" class="documento-oculto">
+            </section>
+
+            <!-- Repetir estructura similar para otros estudiantes -->
+
+            <!-- Sección de promoción unificada -->
+            <section class="super" id="promo">
+                <h2>Promocionate</h2>
+                <div class="formulario-promo">
+                    <form id="formularioPromocion">
+                        <div class="form-group">
+                            <label for="nombre">Nombre:</label>
+                            <input type="text" id="nombre" name="nombre" required>
+                        </div>
+                        <!-- Más campos del formulario -->
+                        <button type="submit" class="boton-enviar">Enviar</button>
+                    </form>
+                </div>
+            </section>
+        </div>
+
+        <footer>
+            <p>Contacta para soporte: ashby.olvera2005@gmail.com</p>
+        </footer>
+    </main>
+    
+    <script src="script.js"></script> <!-- Ruta corregida -->
+</body>
+</html>

@@ -1,0 +1,194 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #D91656;
+}
+main{
+    width: 100%;
+    background-color: #D91656;
+}
+header{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    background-color: #FFB200;
+}
+header img{
+}
+nav {
+    width: 100%;
+    height: 50px;
+    margin-top: 5px;
+    background-color: #FFB200;
+}
+/* ... (resto del CSS) ... */
+
+nav {
+    width: 100%;
+    height: 50px;
+    margin-top: 5px;
+    background-color: #FFB200;
+    display: flex;
+    justify-content: space-between; 
+}
+nav a{
+    font-family: "Instrument Sans", sans-serif;
+    text-decoration: none;
+    color:#640D5F;
+    display: none;
+    background-color: #FFB200;
+    text-align: center;
+    padding: 2px;
+}
+#bot{
+    background-color: #640D5F;
+    color: #FFB200;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+nav a.icon{
+   
+    display: block;
+    font-size: x-large;
+    padding-top: 1.5%;
+   
+}
+.topnav.responsive a{ 
+    display: block; 
+}
+.topnav.responsive {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+nav a:hover{
+    background-color:  #640D5F;
+}
+#prin{
+    width: 100%;
+    height: auto;
+    padding-top: 1px;
+}
+footer{
+    width: 100%;
+    height: 200px;
+    background-color: #FFB200;
+}
+footer p {
+    color: #640D5F;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    
+}
+.super{
+    width: 100%;
+    height: auto;
+    padding-right: 0px;
+    margin-top: 2%;
+    background-color: #D91656;
+    display: inline-block;
+    margin-bottom: 2%;
+    padding: 2%;
+}
+.foto{
+    width: 90%;
+    text-align: center;
+    margin: 5%;
+    border-radius: 10px;
+}
+.foto img{
+    height: 100%;
+}
+.texto{
+    margin: 0 auto;
+    width: 80%;
+    height: 80%;
+    margin-right: 10%;
+    background-color: #D91656;
+    padding-bottom: 5%;
+    font-family: "Itim", cursive;
+    text-align: justify;
+}
+.texto p{
+    padding-right:5% ;
+}
+h2{
+    width: 100%;
+    margin-bottom: 5px;
+    margin-top: 20px;
+    color: #EB5B00;
+    background-color: #640D5F;
+    font-family: "Instrument Sans", sans-serif;
+    text-align: center;
+}
+#tit{
+}
+p{
+    margin-left: 5%;
+}
+
+
+#formularioPromocion {
+    width: 80%;
+    margin: 20px auto;
+    text-align: left;
+}
+
+#formularioPromocion label {
+    display: block;
+    margin-bottom: 5px;
+    color: #EB5B00;
+}
+
+#formularioPromocion input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #640D5F;
+    border-radius: 5px;
+}
+
+#formularioPromocion button {
+    background-color: #640D5F;
+    color: #FFB200;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+@media screen and (min-width: 780px){
+    .foto{
+        width: 30%;
+        height: 90%;
+        float: left;
+    }
+    nav {
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: row ;
+    }
+    nav a {
+        display: block;
+        font-family: "Instrument Sans", sans-serif;
+    }
+    nav a.icon{ display: none;}
+    .foto img{
+        height: 20%;
+        margin-right: 10%;
+        padding-right: 10%;
+    }
+}
+@media screen and (min-width: 1024px){
+}
+
+.oculto {
+    display: none;
+}
